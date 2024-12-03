@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Info</title>
+    <link rel="stylesheet" href="/contact.css">
+</head>
+<body>
+    <div class="total">
+    <h1 id="contactHeading">Contact Us</h1>
+    <form>
+        <div class="container">
+            <label for="ContactName" class="val">Name:</label>
+            <input type="text" id="ContactName" class="val" placeholder="Enter Your Name" name="username">
+            <br><br>
+            <label for="number" class="num">Number:</label>
+            <input type="tel" id="number" name="number" class="num">
+            <br><br>
+            <label for="ContactMail" class="mail">Email:</label>
+            <input type="email" id="ContactMail" placeholder="enter your mail" class="mail">
+            <br><br>
+        </div>
+        <button type="submit" id="ContactSubmit" onclick="search()">submit</button>
+    </form>
+</div>
+<script src="/contact.js"></script>
+</body>
+</html>

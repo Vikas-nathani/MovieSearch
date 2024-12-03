@@ -1,0 +1,89 @@
+body{
+    margin: 0px;
+    background:linear-gradient(90deg,#406391,#5992b1);
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+    color:#69e1c1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+.feedback-form{
+    margin: 50px 20rem;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(152, 162, 152);
+    border-radius: 1rem;
+    box-shadow: 
+    3px 2px 2px  rgb(89, 210, 154) ,
+    -3px -3px 2px  rgb(0, 0, 0);
+    background:linear-gradient(90deg,#7400b8,#6930c3);
+    color:yellow;
+    font-weight: bold;
+}
+label{
+    font-size: 2rem;
+}
+#Name{
+    font-size: 2rem;
+    border-radius: 8px;
+    border: 3px solid green;
+    margin: 10px 20px;
+}
+#mail{
+    font-size: 2rem;
+    border-radius: 8px;
+    border: 3px solid green;
+    margin: 10px 20px;
+}
+#rating{
+    font-size: 2rem;
+    border-radius:8px;
+    border: 3px solid green;
+    margin: 10px 20px;
+}
+
+#feedback-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    display: block; 
+}
+
+#feedback {
+    width: 100%; 
+    max-width: 400px; 
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 2px solid green;
+    border-radius: 5px;
+    resize: vertical; 
+    box-sizing: border-box; 
+}
+#feedback:focus {
+    border-color: #4caf50; 
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); 
+}
+#feedback::placeholder {
+    color: #aaa;
+}
+#submit{
+    font-size: 3rem;
+    border: 2px solid green;
+    border-radius: 8px;
+    margin: 10px 120px;
+    display: flex;
+    padding: 10px 20px;
+}
+#submit:hover{
+    background-color: #4CAF50;
+}

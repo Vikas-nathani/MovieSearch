@@ -1,0 +1,63 @@
+body{
+    margin: 0px;
+    background:linear-gradient(90deg,#e8e8e4,#f8edeb);
+}
+.total{
+    text-align: center;
+    margin: 10rem;
+    padding: 20px 10px ;
+    max-width: 50rem;
+    height: 25rem;
+    margin-left: 15rem;
+    background: linear-gradient(45deg,#48cae4,#e0b1cb); 
+    border:3px solid transparent;
+    border-radius: 2rem;
+    box-shadow: 3px 2px 2px 2px green;
+}
+#contactHeading{
+    font-size:3rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+label{
+    margin: 0px;
+    padding: 10px 20px;
+    font-size: 2rem;
+    font-family: bold;
+    color: red;
+}
+#ContactSubmit{
+    margin: 10px 20px;
+    font-size: 3rem;
+    padding: 5px 10px;
+    border-radius: 2rem;
+    border:2px solid transparent;
+    cursor: pointer;
+    color:white;
+    background-color:rgb(238, 130, 238);
+}
+#ContactSubmit:hover{
+    background-color:rgba(238,130,238,0.7);
+}
+#ContactName{
+    font-size: 2rem;
+    border-radius: 16px;
+    border:2px solid green;
+    cursor: pointer;
+}
+#number{
+    font-size: 2rem;
+    border-radius: 16px;
+    border:2px solid green;
+    cursor: pointer;
+}
+#ContactMail{
+    font-size: 2rem;
+    border-radius: 16px;
+    border:2px solid green;
+    cursor: pointer;
+}

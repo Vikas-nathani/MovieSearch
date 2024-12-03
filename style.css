@@ -1,0 +1,125 @@
+body{
+    margin: 0px;
+    background:linear-gradient(90deg,#e8e8e4,#f8edeb); 
+}
+#jai{
+    font-size: xx-large;
+}
+#Heading{
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    font-size: 3rem;
+    padding: 10px 20px;
+}
+.nav{
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#nameMovie{
+    font-size:1.5rem;
+    border-radius: 8px;
+    border: 2px solid red;
+    box-shadow: 0 4px 8px rgba(232, 43, 43, 0.845); 
+    padding: 10px 20px;
+    margin: 10px 10px 10px 90px;
+}
+#SubmitMovie{
+    font-size: 2rem;
+    margin: 10px 250px 10px 0px;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: rgb(29, 117, 139);
+    border: 2px solid rgb(36, 158, 202);
+}
+.images-section{
+    display: flex;
+    justify-content: space-around;
+}
+#images {
+    margin: 30px 10px;
+    width: 23%; 
+    height: 25rem; 
+    object-fit: cover;
+    border: 2px solid red;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255,0,0,0.7);
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+#feedback{
+    text-decoration: none;
+    color: rgba(0,128,0,0.7);
+    margin: 10px 10px;
+}
+#feedback:hover{
+    color: rgba(0, 128, 0,1);
+}
+#link{
+    text-decoration: none;
+    color: rgba(0,128,0,0.7);
+    margin: 10px 10px;
+}
+#link:hover{
+    color: rgba(0, 128, 0,1);
+}
+p{
+    font-size: 2rem;
+    text-align: center;
+    margin: 10px 10px;
+}
+.movie-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+    border-radius: 8px;
+}
+.img_display {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255,0,0,0.7);
+    margin-bottom: 20px;
+}
+.movie_name{
+    font-size: 5rem;
+    font-weight: bold;
+    color: red;
+    margin-top: 10px;
+}
+.year{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.gern{
+    font-size: 2rem;
+    margin-top: 10px;
+}
+.Directors{
+    font-size: 2rem;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.actors{
+    font-size: 2rem;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.detail{
+    font-size: 1.75rem;
+    margin-top: 10px;
+}
