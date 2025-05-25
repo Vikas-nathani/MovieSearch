@@ -1,36 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>feedback Submition</title>
-    <link rel="stylesheet" href="/feedback.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback | Filmie Quest</title>
+<link rel="stylesheet" href="feedback.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Feedback Form</h1>
-    <div class="feedback-form">
-    <form>
-        <label for="Name" class="Name-class">Name:</label>
-        <input type="text" id="Name" placeholder="Enter Your Name" name="name" class="Name-class">
-        <br><br>
-        <label for="mail">Email:</label>
-        <input type="email" id="mail" placeholder="Enter Your Email" name="email">
-        <br><br>
-        <label for="rating">Rating(1-5):</label>
-        <select id="rating" name="rating">
-            <option value="">select rating</option>
-            <option value="1">1-Poor</option>
-            <option value="2">2-Average</option>
-            <option value="3">3-Good</option>
-            <option value="4">4-Perfect</option>
+<main>
+<section class="feedback-container">
+    <h1><i class="fa-solid fa-comment-dots"></i> Feedback Form</h1>
+    <div class="progress-bar-container">
+    <div class="progress-bar-label">
+        <span id="progressText">Progress: 0%</span>
+        <span id="badge" class="badge"></span>
+    </div>
+    <div class="progress-bar-bg">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+    </div>
+    <form class="feedback-form" id="feedbackForm" autocomplete="off" novalidate>
+    <div class="field-group">
+        <label for="Name"><i class="fa-solid fa-user"></i> Name</label>
+        <div class="input-with-voice">
+        <input id="Name" name="name" type="text" placeholder="Your name" required>
+        <button type="button" class="voice-btn" aria-label="Speak your name" data-for="Name">
+            <i class="fa-solid fa-microphone"></i>
+        </button>
+        </div>
+        <span class="error-message" id="nameError"></span>
+    </div>
+    <div class="field-group">
+        <label for="mail"><i class="fa-solid fa-envelope"></i> Email</label>
+        <div class="input-with-voice">
+        <input id="mail" name="email" type="email" placeholder="your@email.com" required>
+        <button type="button" class="voice-btn" aria-label="Speak your email" data-for="mail">
+            <i class="fa-solid fa-microphone"></i>
+        </button>
+        </div>
+        <span class="error-message" id="emailError"></span>
+    </div>
+    <div class="field-group">
+        <label for="rating"><i class="fa-solid fa-star"></i> Rating (1-5)</label>
+        <select id="rating" name="rating" required>
+        <option value="">Select rating</option>
+        <option value="1">1 - Poor</option>
+        <option value="2">2 - Average</option>
+        <option value="3">3 - Good</option>
+        <option value="4">4 - Perfect</option>
+        <option value="5">5 - Excellent</option>
         </select>
-        <br><br>
-        <label for="feedback" id="feeback-name">Feedback: </label>
-        <textarea id="feedback" rows="5" cols="30" placeholder="Place Your Feedback" name="feedback"></textarea>
-        <br><br>
-        <button type="submit" id="submit" onclick="validate()">Send</button>
-        <script src="/feedback.js"></script>
+        <span class="error-message" id="ratingError"></span>
+    </div>
+    <div class="field-group">
+        <label for="feedbackMsg"><i class="fa-solid fa-message"></i> Feedback</label>
+        <div class="input-with-voice">
+        <textarea id="feedbackMsg" name="feedback" placeholder="Type your feedback here..." rows="4" required></textarea>
+        <button type="button" class="voice-btn" aria-label="Speak your feedback" data-for="feedbackMsg">
+            <i class="fa-solid fa-microphone"></i>
+        </button>
+        </div>
+        <span class="error-message" id="feedbackError"></span>
+    </div>
+    <button id="submit" type="submit">
+        <i class="fa-solid fa-paper-plane"></i> Send
+    </button>
+    <div id="formSuccess" class="form-success"></div>
     </form>
+</section>
+</main>
+<footer class="footer">
+<div class="info">
+    <a id="feedback" href="feedback.html"><i class="fa-solid fa-comment"></i> Feedback</a>
+    <a id="link" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
 </div>
+<p>&copy; 2025 Filmie Quest. All rights reserved.</p>
+</footer>
+<script src="feedback.js"></script>
 </body>
 </html>

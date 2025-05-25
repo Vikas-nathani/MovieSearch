@@ -1,35 +1,47 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Description</title>
-    <link rel="stylesheet" href="/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Filmie Quest Search</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 id="Heading">Filmie Quest</h1>
-    <div class="nav">
-        <input type="text" id="nameMovie" placeholder="Enter the Movie Name" name="Search">
-        <button type="submit" id="SubmitMovie" onclick="Search()">Search</button>
-    </div>
-    <div class="movie-details" style="display:none;min-height: 600px; " ></div>
-    <div id="movieDetails"></div>
-    <div class="images-section">
-        <img id="images" src="/images/avengers.jpg" alt="image will be loded">
-        <img id="images" src="/images/devara.jpg"alt="image will be loded">
-        <img id="images" src="/images/salar.jpg"alt="image will be loded">
-        <img id="images" src="/images/tare.png"alt="image will be loded">
+<header>
+<h1 id="Heading">🎬 Filmie Quest Search</h1>
+<form class="nav" id="searchForm" autocomplete="off" role="search">
+    <input 
+    type="text" 
+    id="nameMovie" 
+    name="movie" 
+    placeholder="Enter movie name..." 
+    aria-label="Movie name" 
+    required
+    >
+    <button type="submit" id="SubmitMovie">Search</button>
+</form>
+</header>
 
-    </div>
-    <footer id="end">
-        <div class="foot">
-            <div class="info">
-            <a href="/feedback.html" id="feedback">Feedback</a>
-            <a href="/contact.html" id="link">Contact Us</a>
-        </div>
-            <p id="p">All The Information About Every Movie lovers</p>
-        </div>
-    </footer>
-    <script src="/index.js"></script>
+<main>
+<section class="images-section" aria-label="Featured Movies">
+    <img class="gallery-image" src="/images/devara.jpg" alt="Featured Movie 1 poster">
+    <img class="gallery-image" src="/images/salar.jpg" alt="Featured Movie 2 poster">
+    <img class="gallery-image" src="/images/avengers.jpg" alt="Featured Movie 3 poster">
+</section>
+
+<section class="movie-details" aria-live="polite">
+    <!-- Movie details will be dynamically inserted here -->
+</section>
+</main>
+
+<footer class="footer">
+<div class="info">
+    <a id="feedback" href="feedback.html">Feedback</a>
+    <a id="link" href="contact.html">Contact Us</a>
+</div>
+<p>&copy; 2025 Filmie Quest. All rights reserved.</p>
+</footer>
+<script src="index.js"></script>
 </body>
 </html>
