@@ -31,7 +31,7 @@ Keyboard and screen reader friendly
 🛠️ Getting Started
 Clone the repo:
 
-git clone https://github.com/yourusername/filmie-quest.git
+git clone [https://github.com/yourusername/filmie-quest.git](https://github.com/Vikas-nathani/MovieSearch.git)
 cd filmie-quest
 Open index.html in your browser.
 
