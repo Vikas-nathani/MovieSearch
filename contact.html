@@ -1,29 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Info</title>
-    <link rel="stylesheet" href="/contact.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Filmie Quest</title>
+<link rel="stylesheet" href="contact.css">
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="total">
-    <h1 id="contactHeading">Contact Us</h1>
-    <form>
-        <div class="container">
-            <label for="ContactName" class="val">Name:</label>
-            <input type="text" id="ContactName" class="val" placeholder="Enter Your Name" name="username">
-            <br><br>
-            <label for="number" class="num">Number:</label>
-            <input type="tel" id="number" name="number" class="num">
-            <br><br>
-            <label for="ContactMail" class="mail">Email:</label>
-            <input type="email" id="ContactMail" placeholder="enter your mail" class="mail">
-            <br><br>
-        </div>
-        <button type="submit" id="ContactSubmit" onclick="search()">submit</button>
+<main>
+<section class="contact-container">
+    <h1 id="contactHeading"><i class="fa-solid fa-envelope"></i> Contact Us</h1>
+    <form id="contactForm" autocomplete="off" novalidate>
+    <div class="field-group">
+        <label for="ContactName"><i class="fa-solid fa-user"></i> Name</label>
+        <input id="ContactName" name="name" type="text" placeholder="Your full name" required>
+        <span class="error-message" id="nameError"></span>
+    </div>
+    <div class="field-group">
+        <label for="number"><i class="fa-solid fa-phone"></i> Phone</label>
+        <input id="number" name="phone" type="tel" placeholder="10-digit phone number" maxlength="10" required>
+        <span class="error-message" id="phoneError"></span>
+    </div>
+    <div class="field-group">
+        <label for="ContactMail"><i class="fa-solid fa-envelope"></i> Email</label>
+        <input id="ContactMail" name="email" type="email" placeholder="your@email.com" required>
+        <span class="error-message" id="emailError"></span>
+    </div>
+    <div class="field-group">
+        <label for="ContactMessage"><i class="fa-solid fa-comment-dots"></i> Message</label>
+        <textarea id="ContactMessage" name="message" placeholder="Type your message here..." rows="4" required></textarea>
+        <span class="error-message" id="messageError"></span>
+    </div>
+    <button id="ContactSubmit" type="submit">
+        <i class="fa-solid fa-paper-plane"></i> Submit
+    </button>
+    <div id="formSuccess" class="form-success">
+        <!-- Success animation will appear here -->
+    </div>
     </form>
+    <div class="social-media">
+    <a href="https://facebook.com" class="fa-brands fa-facebook-f" style="color:#3b5998" title="Facebook" target="_blank"></a>
+    <a href="https://twitter.com" class="fa-brands fa-twitter" style="color:#55acee" title="Twitter" target="_blank"></a>
+    <a href="https://instagram.com" class="fa-brands fa-instagram" style="color:#ac2bac" title="Instagram" target="_blank"></a>
+    <a href="https://linkedin.com" class="fa-brands fa-linkedin-in" style="color:#0082ca" title="LinkedIn" target="_blank"></a>
+    </div>
+    <div class="map-container">
+    <h2><i class="fa-solid fa-map-location-dot"></i> Our Location</h2>
+    <!-- Custom marker using Google Maps Static API with marker icon -->
+    <div class="map-outer">
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019697836173!2d-122.41941518468102!3d37.77492927975925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5b2b2b2b%3A0x0!2zMzfCsDQ2JzI5LjgiTiAxMjLCsDI1JzA3LjkiVw!5e0!3m2!1sen!2sus!4v1716720000000!5m2!1sen!2sus"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <!-- Custom marker overlay -->
+        <div class="custom-marker">
+        <i class="fa-solid fa-location-dot"></i>
+        </div>
+    </div>
+    </div>
+</section>
+</main>
+<footer class="footer">
+<div class="info">
+    <a id="feedback" href="feedback.html"><i class="fa-solid fa-comment"></i> Feedback</a>
+    <a id="link" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
 </div>
-<script src="/contact.js"></script>
+<p>&copy; 2025 Filmie Quest. All rights reserved.</p>
+</footer>
+<script src="contact.js"></script>
 </body>
 </html>
